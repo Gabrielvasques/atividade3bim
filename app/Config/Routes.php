@@ -38,6 +38,8 @@ $routes->set404Override();
 $routes->get('/', 'Home::index');
 $routes->get('listar', 'Produtos::listar');
 $routes->get('produto/(:num)', 'Produtos::produto/$1');
+$routes->get('produtos/(:num)', 'Produtos::produtos/$1');
+$routes->get('gravar', 'Produtos::gravarProduto/$1');
 /*
  * --------------------------------------------------------------------
  * Additional Routing
