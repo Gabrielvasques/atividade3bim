@@ -40,6 +40,10 @@ $routes->get('listar', 'Produtos::listar');
 $routes->get('produto/(:num)', 'Produtos::produto/$1');
 $routes->get('produtos/(:num)', 'Produtos::produtos/$1');
 $routes->get('gravar', 'Produtos::gravarProduto/$1');
+$routes->get('model/(:num)', 'Produtos::produtosModel/$1');
+$routes->delete('delete/(:num)', 'Produtos::deletar/$1');
+$routes->put('atualizar/(:segment)', 'Produtos::atualizar/$1');
+$routes->patch('atualizar/(:segment)', 'Produtos::atualizar/$1');
 /*
  * --------------------------------------------------------------------
  * Additional Routing
